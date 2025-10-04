@@ -1,0 +1,233 @@
+.contenedor-principal {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  
+}
+/* ===== inicio ===== */
+.inicio {
+  width: 100vw;
+      /* Ocupa todo el ancho disponible */
+  padding: 2rem;   /* Padding opcional para que el contenido no toque los bordes */
+  box-sizing: border-box; 
+  background-image: url("../assets/inicio.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  
+}
+
+.inicio-content {
+  background: rgba(0,0,0,0.5);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* ===== Sección Nosotros ===== */
+.nosotros {
+  padding: 80px 20px;
+  background: #f9f9f9;
+  text-align: center;
+  width: 100vw;     /* Ocupa todo el ancho disponible */
+  padding: 2rem;   /* Padding opcional para que el contenido no toque los bordes */
+  box-sizing: border-box; 
+}
+
+.nosotros h2 {
+  margin-bottom: 30px;
+  font-family: 'ArialHebrew-bold', sans-serif;
+  color: #000000;
+  text-align: center;
+}
+
+.nosotros p {
+  max-width: 800px;
+  margin: auto;
+   font-family: 'ArialHebrew-Light', sans-serif;
+  color: #00008B;
+}
+
+.nosotros blockquote {
+   font-family: 'ArialHebrew-Light', sans-serif;
+  margin-top: 20px;
+  font-style: italic;
+  color: #00008B;
+  border-left: 4px solid #f1c40f;
+  padding-left: 15px;
+}
+
+/* ===== Servicios ===== */
+.servicios {
+  padding: 80px 0;
+  text-align: center;
+  background-color: #f9f9f9;
+  width: 100vw;     /* Ocupa todo el ancho disponible */
+  padding: 2rem;   /* Padding opcional para que el contenido no toque los bordes */
+  box-sizing: border-box; 
+}
+
+.servicios h2 {
+  margin-bottom: 30px;
+  font-family: 'ArialHebrew-bold', sans-serif;
+  color: #000000;
+  text-align: center;
+}
+
+.servicios-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  color:#00008B;
+}
+
+.servicios-grid .card {
+  background: #e3e2e2;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform .2s;
+  border-radius: 10px;
+  
+}
+
+.servicios-grid .card:hover {
+  transform: translateY(-5px);
+}
+
+/* ===== Misión y Visión ===== */
+.myv {
+  padding: 80px 0;
+  text-align: center;
+  background: #f9f9f9;
+  width: 100vw;     /* Ocupa todo el ancho disponible */
+  padding: 2rem;   /* Padding opcional para que el contenido no toque los bordes */
+  box-sizing: border-box; 
+}
+
+.myv h2 {
+  margin-bottom: 30px;
+  font-family: 'ArialHebrew-bold', sans-serif;
+  color: #000000;
+  text-align: center;
+}
+
+.mision-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.mision-grid .card {
+  background: #e3e2e2;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  color:#00008B;
+  transition: transform .2s;
+}
+.mision-grid .card:hover {
+  transform: translateY(-5px);
+}
+
+.mision-grid .card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* ===== Contacto ===== */
+.contactanos {
+  padding: 80px 0;
+  text-align: center;
+  background-color: #f9f9f9;
+    width: 100vw;
+  
+}
+
+.contactanos h2 {
+  margin-bottom: 30px;
+  font-family: 'ArialHebrew-bold', sans-serif;
+  color:#000000;
+}
+
+.contactanos form {
+  max-width: 500px;
+  margin: auto;
+  color:#00008B;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contactanos label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-weight: 600;
+  color:#000000;
+}
+
+.contactanos input,
+.contactanos textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #000000;
+  border-radius: 6px;
+  margin-top: 5px;
+  background-color: #fff;
+  color:#000000
+
+}
+
+.contactanos button {
+  background: #3b82f6;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background .3s;
+   align-self: flex-end;
+   font-family: 'ArialHebrew-bold', sans-serif;
+  
+}
+
+.contactanos button:hover {
+  background: #10b981;
+  transform: translateY(-5px);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .inicio {
+    height: 50vh;
+    padding: 20px;
+  }
+
+  .inicio-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .nosotros, .servicios, .myv, .contactanos {
+    padding: 40px 15px;
+  }
+
+  .servicios-grid, .mision-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contactanos form {
+    width: 100%;
+    padding: 15px;
+  }
+}
+
